@@ -1,6 +1,6 @@
 # encoding: utf-8
 #
-# Игра 'Виселица'.
+# Игра 'Виселица'. Версия 2.0.
 #
 # (с) Nikolay Zhurilo (mikolajan) when studying GoodProgrammer.ru
 
@@ -19,7 +19,7 @@ require_relative 'lib/game'
 
 puts 'Игра виселица'
 
-word = File.readlines(__dir__ + '/data/words.txt', encoding: 'UTF-8', chomp: true).sample
+word = File.readlines("#{__dir__}/data/words.txt", encoding: 'UTF-8', chomp: true).sample
 game = Game.new(word)
 console_interface = ConsoleInterface.new(game)
 

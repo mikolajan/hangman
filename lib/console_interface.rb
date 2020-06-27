@@ -1,6 +1,6 @@
 class ConsoleInterface
   FIGURES =
-    Dir[__dir__ + '/../data/figures/*.txt'].
+    Dir["#{__dir__}/../data/figures/*.txt"].
     sort.
     map { |file_name| File.read(file_name) }
 
@@ -33,15 +33,7 @@ class ConsoleInterface
   end
 
   def word_to_show
-    result =
-      @game.letters_to_guess.map do |letter|
-        if letter == nil
-          '__'
-        else
-          letter
-        end
-      end
-    result.join(' ')
+      @game.letters_to_guess.map { |letter| letter == nil ? '__' : letter }.join(' ')
   end
 
   def errors_to_show
@@ -49,7 +41,7 @@ class ConsoleInterface
   end
 
   def get_input
-    print 'Введите следующую букву:'
+    print 'Введите следующую букву: '
     letter = gets[0].upcase
     letter
   end
