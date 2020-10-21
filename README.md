@@ -9,6 +9,12 @@
 
     gem install bundler
     
+Для скачивания и установки всех необходимых гемов введите:
+
+    git clone git@github.com:mikolajan/hangman.git
+    cd nangman
+    bundle install
+
 Для запуска игры, находясь в дирректории с игрой, в консоли введите:
 
     ruby main.rb
