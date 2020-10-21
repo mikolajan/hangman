@@ -17,9 +17,9 @@
 
 Для запуска игры, находясь в дирректории с игрой, в консоли введите:
 
-    ruby main.rb
+    bundle exec ruby main.rb
 
-Слова для игры хранятся в /data/words.txt. Для изменения числа ошибок в /lib/game.rb измените значение константы TOTAL_ERRORS_ALLOWED, для отключения изображения виселицы закомментируйте 16-ю строку в /lib/console_interface.rb
+Слова для игры хранятся в /data/words.txt. Для изменения числа ошибок в /lib/game.rb измените значение константы TOTAL_ERRORS_ALLOWED, для отключения изображения виселицы закомментируйте 21-ю строку в /lib/console_interface.rb
 
 ###### Пример запуска игры:
 ![Пример запуска игры](https://github.com/mikolajan/hangman/blob/images-for-README/game_example.jpg)
