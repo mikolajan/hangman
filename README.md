@@ -12,7 +12,7 @@
 Для скачивания и установки всех необходимых гемов для игры введите:
 
     git clone git@github.com:mikolajan/hangman.git
-    cd nangman
+    cd hangman
     bundle install
 
 Для запуска игры, находясь в дирректории с игрой, в консоли введите:
