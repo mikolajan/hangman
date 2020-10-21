@@ -17,12 +17,11 @@ class ConsoleInterface
     current_error = "Ошибки (#{@game.errors_made}): #{errors_to_show}"
 
     puts <<~EOF
-     #{hidden_word.colorize(:blue)}
+      #{hidden_word.colorize(:blue)}
       #{figure.colorize(:yellow)}
 
-
-     #{current_error.colorize(:red)}
-     У вас осталось ошибок: #{@game.error_allowed}
+      #{current_error.colorize(:red)}
+      У вас осталось ошибок: #{@game.error_allowed}
 
     EOF
 
