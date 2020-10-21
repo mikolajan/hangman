@@ -12,7 +12,7 @@
 Слова для игры хранятся в /data/words.txt. Для изменения числа ошибок в /lib/game.rb измените значение константы TOTAL_ERRORS_ALLOWED, для отключения изображения виселицы закомментируйте 16-я строку в /lib/console_interface.rb
 
 ###### Пример запуска игры:
-
+https://github.com/mikolajan/hangman/blob/images-for-README/game_example.jpg
 
      СЛОВО: __ А __ О __ Т __
                _______
